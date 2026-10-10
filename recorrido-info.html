@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+
+    <div class="website">
+
+        <header class="header">
+            <img src="./img/salomone banner.png" alt="Header principal">
+        </header>
+
+        <main class="content">
+
+            <section class="left-column">
+
+                <div class="update">
+                    <span class="section-title pink">PORTAL DEL CEMENTERIO</span>
+                    <img src="./img/saldungaray foto.jpg" alt="Banner principal">
+                </div>
+
+                <div class="pickup">
+                    <span class="section-title blue">ACERCA DE LA OBRA</span>
+
+                    <div class="text-box">
+                        <p>
+                            De estilo Art Decó, esta imponente estructura simboliza el tránsito entre la vida y la muerte. Su diseño presenta una cruz monumental que emerge de una gran rueda, en cuyo centro se encuentra el rostro de Cristo. Según el ángulo desde el cual se lo observe, dicho rostro expresa diferentes emociones: dolor, sufrimiento y muerte. 
+                            <br><br>El interior del portal está revestido con cerámicos azules esmaltados que, al reflejar la luz de forma dramática, funcionan como el diafragma de una pupila dilatada. Esta composición genera un efecto visual semejante al de un ojo con una mirada penetrante, en el que la luz filtrada produce contrastes sombríos que evocan la corona de espinas, reforzando así la carga simbólica de la obra.
+                           <br> <br>
+                            El diseño fue realizado en colaboración con el escultor Santiago Chierico, responsable de las esculturas religiosas, incluidos los rostros del Cristo, a los que dotó de una profunda expresividad artística.
+
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="andamios">
+                    <span class="seccion-titulo andamios">CONSTRUCCIÓN DEL PORTAL</span>
+                    <div class="text-box">
+                        <img src="./img/cementerio saldungaray andamios.png" alt="construccion del portal"
+                        width="900px"
+                        height="500px">
+                    </div>
+                </div>
+
+                <div class="galeria">
+                    <div class="galeria-item">
+                        <img src="./img/dolor.png" alt="dolor">
+                        <h3>dolor</h3>
+                    </div>
+
+                    <div class="galeria-item">
+                        <img src="./img/muerte.png" alt="muerte">
+                        <h3>muerte</h3>
+                    </div>
+
+                    <div class="galeria-item">
+                        <img src="./img/sufrimiento.png" alt="sufrimiento">
+                        <h3>sufrimiento</h3>
+                    </div>
+</div>
+
+
+
+            </section>
+
+            <aside class="right-column">
+
+<div class="sidebar-box poll">
+    <span class="sidebar-title">Ubicación</span>
+
+    <div class="map-container">
+        <a href="https://www.google.com/maps/place/Cemetery+of+Saldungaray/@-38.2014718,-61.7594221,19.56z/data=!4m7!3m6!1s0x95ece630af63de61:0xaf7914d09666308a!4b1!8m2!3d-38.2014549!4d-61.7590085!16s%2Fg%2F11b7l1vw9m?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <img src="./img/ubicacion saldungaray.jpg"
+                 alt="Ubicación de Saldungaray">
+        </a>
+    </div>
+</div>
+
+                <div class="sidebar-box small-box">
+                    <h3>text text</h3>
+                </div>
+
+                <div class="about">
+                    <span class="section-title blue">ABOUT THE SITE</span>
+                    <div class="sidebar-box about-box">
+                        <h3>text text</h3>
+                    </div>
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Libre+Baskerville:wght@400&display=swap');
+
+
+@font-face {
+            font-family: "Morrison Regular";
+            src: url("./Morrison-Regular.otf") format("opentype");
+}
+
+        /* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background: url("img/cieloDeco.png");
+    
+    color: var(--cream);
+
+    font-family: 'Montserrat', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.website {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    border: 4px solid #b08a4f;
+    border-radius: 12px;
+    background:#171514;
+    box-shadow: 0 0 0 2px #ffe1ee;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    border: 2px solid #f8f8f8;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* MAIN LAYOUT */
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 0.92fr;
+    gap: 12px;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+
+.left-column,
+.right-column {
+    min-width: 0;
+}
+
+/* SECTION TITLES */
+
+.section-title {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 5px 12px;
+    margin-bottom: -1px;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+
+/* UPDATE BANNER */
+/* TÍTULOS DE LAS SECCIONES */
+
+.update .section-title.pink,
+.pickup .section-title.blue,
+.seccion-titulo.andamios {
+    display: inline-block;
+    font-size: 30px;
+    color: #b08a4f;
+    padding: 8px 14px;
+    font-family: "Morrison Regular";
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.seccion-titulo.andamios img{
+    height: 80%;
+    width: 1%;
+}
+
+.update {
+    margin-bottom: 16px;
+}
+
+.update img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2.8 / 1;
+    object-fit: cover;
+    border: 2px solid #b08a4f;
+    border-radius: 4px;
+}
+
+/* PICKUP MEDIA */
+
+.pickup {
+    position: relative;
+}
+
+
+
+.text-box {
+    padding: 14px 16px;
+    border: 3px var(--gold);
+    border-radius: 0 0 8px 8px;
+    outline: 1px solid #d8eaf0;
+    color: #fffdf8;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.text-box p {
+    margin: 6px 0 12px;
+}
+
+.pink-text {
+    color: #b08a4f;
+}
+
+.text-box hr {
+    border: none;
+    border-top: 2px solid #e9e2c9;
+    margin: 14px 0;
+}
+
+/* SIDEBAR */
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.sidebar-box {
+    border: 1px solid #d9c69b;
+    border-radius: 10px;
+    padding: 7px;
+    background: #171514;
+}
+
+.poll {
+    position: relative;
+    padding-top: 22px;
+}
+
+.sidebar-title {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #b7a36d;
+    font: bold 8px Arial, sans-serif;
+}
+
+.inner-box {
+    min-height: 185px;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 9px;
+    background: white;
+}
+
+.inner-box h3,
+.small-box h3,
+.about-box h3 {
+    margin: 5px 0;
+    font-size: 19px;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.small-box {
+    min-height: 100px;
+    border-color: #222;
+    background: white;
+}
+
+.about {
+    position: relative;
+    padding-top: 17px;
+}
+
+.about-box {
+    min-height: 175px;
+    padding: 24px;
+    border-color: #333;
+    background: white;
+    text-align: center;
+}
+
+/*gps*/
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/*galeria*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.galeria-item {
+    text-align: center;
+    min-width: 0;
+}
+
+.galeria-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 2px solid #b08a4f;
+    border-radius: 6px;
+}
+
+.galeria-item h3 {
+    color: #b08a4f;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 520px) {
+    body {
+        padding: 4px;
+    }
+
+    .website {
+        padding: 3px;
+        border-width: 3px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 3px;
+    }
+
+    .right-column {
+        padding-top: 0;
+    }
+
+    .text-box {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .inner-box {
+        min-height: auto;
+    }
+
+    .about-box {
+        min-height: 120px;
+    }
+}
+    </style>
+
+</body>
+</html>
